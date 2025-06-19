@@ -1,0 +1,32 @@
+/* === OVAL SPEECH‑BUBBLE BUTTON === */
+.speech-bubble {
+    /* pill body */
+            /* brown */
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+  
+    padding: 4px 60px;           /* ← widen / narrow here */       /* perfect oval */
+  
+    display: inline-flex;         /* keep inline, allow flex centring */
+    align-items: center;
+    justify-content: center;
+    overflow: visible;            /* tail must stick out */
+  }
+  
+  /* tail */
+  .speech-bubble::after {
+    content: '';
+    position: absolute;
+    left: 40%;
+    bottom: -15px;                /* move tail below the pill */
+    transform: translateX(-50%);
+  
+    /* triangle */
+    width: 0; height: 0;
+    border-left: 15px solid transparent;
+    border-right: 40px solid transparent;
+      /* same colour as body */
+  }
+  

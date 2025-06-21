@@ -7,7 +7,7 @@
     font-size: 16px;
     font-weight: 600;
   
-    padding: 4px 60px;           /* ← widen / narrow here */       /* perfect oval */
+    padding: 2px 40px;           /* ← widen / narrow here */       /* perfect oval */
   
     display: inline-flex;         /* keep inline, allow flex centring */
     align-items: center;
@@ -25,8 +25,9 @@
   
     /* triangle */
     width: 0; height: 0;
-    border-left: 15px solid transparent;
-    border-right: 40px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 50px solid transparent;
+    border-radius: 0 0 0px 40%;
       /* same colour as body */
   }
   
